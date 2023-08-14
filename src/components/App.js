@@ -11,7 +11,10 @@ const App = () => {
     <div style={{backgroundColor:'green',padding:'10px'}}>
         {/* Do not remove the main div */}
         <h1>Parent Component</h1>
-        <div className="textContainer">{input}</div>
+        {/* <div className="textContainer">{input}</div> */}
+        {
+          (input)&&<p>{input}</p>
+        }
         <Child handlingFn={handlingFn}/>
     </div>
   )
